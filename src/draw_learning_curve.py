@@ -6,24 +6,26 @@ draw a learning curve
 @author: xiul
 '''
 
-import argparse, json
+import argparse
+import json
+
 import matplotlib.pyplot as plt
 
 
 def read_performance_records(path):
     """ load the performance score (.json) file """
-    
+
     data = json.load(open(path, 'rb'))
     for key in data['success_rate'].keys():
         if int(key) > -1:
             print("%s\t%s\t%s\t%s" % (key, data['success_rate'][key], data['ave_turns'][key], data['ave_reward'][key]))
-            
+
 
 def load_performance_file(path):
     """ load the performance score (.json) file """
-    
+
     data = json.load(open(path, 'rb'))
-    numbers = {'x': [], 'success_rate':[], 'ave_turns':[], 'ave_rewards':[]}
+    numbers = {'x': [], 'success_rate': [], 'ave_turns': [], 'ave_rewards': []}
     keylist = [int(key) for key in data['success_rate'].keys()]
     keylist.sort()
 
@@ -38,7 +40,7 @@ def load_performance_file(path):
 
 def draw_learning_curve(numbers):
     """ draw the learning curve """
-    
+
     plt.xlabel('Simulation Epoch')
     plt.ylabel('Success Rate')
     plt.title('Learning Curve')
@@ -50,7 +52,7 @@ def draw_learning_curve(numbers):
 
 def main(params):
     cmd = params['cmd']
-    
+
     if cmd == 0:
         numbers = load_performance_file(params['result_file'])
         draw_learning_curve(numbers)
@@ -60,11 +62,13 @@ def main(params):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    
+
     parser.add_argument('--cmd', dest='cmd', type=int, default=1, help='cmd')
-    
-    parser.add_argument('--result_file', dest='result_file', type=str, default='./deep_dialog/checkpoints/rl_agent/11142016/noe2e/agt_9_performance_records.json', help='path to the result file')
-    
+
+    parser.add_argument('--result_file', dest='result_file', type=str,
+                        default='./deep_dialog/checkpoints/rl_agent/11142016/noe2e/agt_9_performance_records.json',
+                        help='path to the result file')
+
     args = parser.parse_args()
     params = vars(args)
     print(json.dumps(params, indent=2))

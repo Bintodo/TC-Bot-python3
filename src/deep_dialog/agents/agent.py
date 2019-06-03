@@ -4,7 +4,6 @@ Created on May 17, 2016
 @author: xiul, t-zalipt
 """
 
-from deep_dialog import dialog_config
 
 class Agent:
     """ Prototype for all agent classes, defining the interface they must uphold """
@@ -25,16 +24,14 @@ class Agent:
         self.epsilon = params['epsilon']
         self.agent_run_mode = params['agent_run_mode']
         self.agent_act_level = params['agent_act_level']
-        
 
     def initialize_episode(self):
         """ Initialize a new episode. This function is called every time a new episode is run. """
-        self.current_action = {}                    #   TODO Changed this variable's name to current_action
-        self.current_action['diaact'] = None        #   TODO Does it make sense to call it a state if it has an act? Which act? The Most recent?
+        self.current_action = {}     # TODO Changed this variable's name to current_action
+        self.current_action['diaact'] = None  # TODO Does it make sense to call it a state if it has an act? Which act? The Most recent?
         self.current_action['inform_slots'] = {}
         self.current_action['request_slots'] = {}
         self.current_action['turn'] = 0
-
 
     def state_to_action(self, state, available_actions):
         """ Take the current state and return an action according to the current exploration/exploitation policy
@@ -55,7 +52,6 @@ class Agent:
         act_slot_value_response = None
         return {"act_slot_response": act_slot_response, "act_slot_value_response": act_slot_value_response}
 
-
     def register_experience_replay_tuple(self, s_t, a_t, reward, s_tplus1, episode_over):
         """  Register feedback from the environment, to be stored as future training data
 
@@ -70,23 +66,22 @@ class Agent:
         None
         """
         pass
-    
-    
-    def set_nlg_model(self, nlg_model):
-        self.nlg_model = nlg_model  
 
+    def set_nlg_model(self, nlg_model):
+        self.nlg_model = nlg_model
 
     def set_nlu_model(self, nlu_model):
         self.nlu_model = nlu_model
-     
-       
+
     def add_nl_to_action(self, agent_action):
         """ Add NL to Agent Dia_Act """
         if agent_action['act_slot_response']:
             agent_action['act_slot_response']['nl'] = ""
-            user_nlg_sentence = self.nlg_model.convert_diaact_to_nl(agent_action['act_slot_response'], 'agt') #self.nlg_model.translate_diaact(agent_action['act_slot_response']) # NLG
+            user_nlg_sentence = self.nlg_model.convert_diaact_to_nl(agent_action['act_slot_response'],
+                                                                    'agt')  # self.nlg_model.translate_diaact(agent_action['act_slot_response']) # NLG
             agent_action['act_slot_response']['nl'] = user_nlg_sentence
         elif agent_action['act_slot_value_response']:
             agent_action['act_slot_value_response']['nl'] = ""
-            user_nlg_sentence = self.nlg_model.convert_diaact_to_nl(agent_action['act_slot_value_response'], 'agt') #self.nlg_model.translate_diaact(agent_action['act_slot_value_response']) # NLG
+            user_nlg_sentence = self.nlg_model.convert_diaact_to_nl(agent_action['act_slot_value_response'],
+                                                                    'agt')  # self.nlg_model.translate_diaact(agent_action['act_slot_value_response']) # NLG
             agent_action['act_slot_response']['nl'] = user_nlg_sentence

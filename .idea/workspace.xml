@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4a0ebf2f-a474-45f3-900f-2fdf002c3a86" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/agents/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/agents/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/agents/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/agents/agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/agents/agent_baselines.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/agents/agent_baselines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/agents/agent_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/agents/agent_cmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/agents/agent_dqn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/agents/agent_dqn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/dialog_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/dialog_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/dialog_system/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/dialog_system/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/dialog_system/dialog_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/dialog_system/dialog_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/dialog_system/dict_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/dialog_system/dict_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/dialog_system/kb_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/dialog_system/kb_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/dialog_system/state_tracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/dialog_system/state_tracker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/dialog_system/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/dialog_system/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/nlg/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/nlg/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/nlg/decoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/nlg/decoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/nlg/lstm_decoder_tanh.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/nlg/lstm_decoder_tanh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/nlg/nlg.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/nlg/nlg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/nlg/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/nlg/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/nlu/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/nlu/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/nlu/bi_lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/nlu/bi_lstm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/nlu/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/nlu/lstm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/nlu/nlu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/nlu/nlu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/nlu/seq_seq.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/nlu/seq_seq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/nlu/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/nlu/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/qlearning/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/qlearning/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/qlearning/dqn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/qlearning/dqn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/qlearning/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/qlearning/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/usersims/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/usersims/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/usersims/usersim.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/usersims/usersim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deep_dialog/usersims/usersim_rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/deep_dialog/usersims/usersim_rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/draw_learning_curve.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/draw_learning_curve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/run.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/draw_learning_curve.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#70#85#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/INSTRUCTION.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="608">
+                <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/deep_dialog/agents/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/deep_dialog/agents/agent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/deep_dialog/data/dia_act_nl_pairs.v6.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imgs/noe2e_learning_curve.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/deep_dialog/dialog_config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/deep_dialog/dialog_system/dialog_manager.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/agents/__init__.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/agents/agent.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/agents/agent_baselines.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/agents/agent_cmd.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/agents/agent_dqn.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/dialog_system/__init__.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/dialog_system/dict_reader.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/dialog_system/kb_helper.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/dialog_system/state_tracker.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/dialog_system/utils.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/nlg/__init__.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/nlg/decoder.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/nlg/lstm_decoder_tanh.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/nlg/nlg.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/nlg/utils.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/nlu/__init__.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/nlu/bi_lstm.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/nlu/lstm.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/nlu/nlu.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/nlu/seq_seq.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/nlu/utils.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/qlearning/__init__.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/qlearning/dqn.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/qlearning/utils.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/usersims/__init__.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/usersims/usersim.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/usersims/usersim_rule.py" />
+        <option value="$PROJECT_DIR$/src/deep_dialog/dialog_config.py" />
+        <option value="$PROJECT_DIR$/src/draw_learning_curve.py" />
+        <option value="$PROJECT_DIR$/src/run.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/demo.ipynb" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/TC-Bot-python3.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" />
+        <option value="$PROJECT_DIR$/.idea/deployment.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-329" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TC-Bot-python3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TC-Bot-python3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TC-Bot-python3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TC-Bot-python3" type="462c0819:PsiDirectoryNode" />
+              <item name="imgs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TC-Bot-python3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TC-Bot-python3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TC-Bot-python3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TC-Bot-python3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="deep_dialog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TC-Bot-python3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TC-Bot-python3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="deep_dialog" type="462c0819:PsiDirectoryNode" />
+              <item name="agents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TC-Bot-python3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TC-Bot-python3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="deep_dialog" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TC-Bot-python3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TC-Bot-python3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="deep_dialog" type="462c0819:PsiDirectoryNode" />
+              <item name="dialog_system" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MarkdownNavigator.Settings.Notices" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a0ebf2f-a474-45f3-900f-2fdf002c3a86" name="Default Changelist" comment="" />
+      <created>1559293721562</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559293721562</updated>
+      <workItem from="1559293725839" duration="3812000" />
+      <workItem from="1559366999481" duration="399000" />
+      <workItem from="1559373630138" duration="730000" />
+      <workItem from="1559384113453" duration="240000" />
+      <workItem from="1559399401957" duration="349000" />
+      <workItem from="1559528009516" duration="256000" />
+      <workItem from="1559528519312" duration="964000" />
+      <workItem from="1559534036675" duration="118000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6868000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-329" y="-1080" width="1920" height="1080" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1369936" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.32903865" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="bottom" id="Tail" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="Remote Host" order="4" />
+      <window_info anchor="right" id="SciView" order="5" />
+      <window_info anchor="right" id="R Packages" order="6" />
+      <window_info anchor="right" id="make" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/data/movie_kb.1k.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/dialog_system/dialog_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#58#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/agents/agent_baselines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="e#57#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/agents/agent_cmd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1054">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#58#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/agents/agent_dqn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/checkpoints/rl_agent/e2e/agt_9_performance_records.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/data/dia_acts.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/data/slot_set.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/dialog_system/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/dialog_system/dict_reader.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/dialog_system/kb_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1950">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#58#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/dialog_system/state_tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1806">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#73#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/dialog_system/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/nlg/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/nlg/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2638">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/nlg/lstm_decoder_tanh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+          <folding>
+            <element signature="e#106#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/nlg/nlg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2474">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#109#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/nlg/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#48#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/nlu/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/nlu/bi_lstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2874">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#85#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/nlu/lstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1450">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="e#106#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/nlu/nlu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2266">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <element signature="e#48#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/nlu/seq_seq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2346">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#48#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/nlu/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="e#48#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/qlearning/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/qlearning/dqn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3674">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/qlearning/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding>
+            <element signature="e#48#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/usersims/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/usersims/usersim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/usersims/usersim_rule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6106">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#314#323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.ipynb" />
+    <entry file="file://$PROJECT_DIR$/src/draw_learning_curve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#70#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/INSTRUCTION.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/agents/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/data/dia_act_nl_pairs.v6.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imgs/noe2e_learning_curve.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/dialog_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/deep_dialog/agents/agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="608">
+            <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
